@@ -1,278 +1,69 @@
 <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "inverse-on-surface": "#4d556b",
-                    "surface-container-low": "#091328",
-                    "tertiary-container": "#cafd00",
-                    "primary-dim": "#9c48ea",
-                    "secondary-fixed-dim": "#00d7f0",
-                    "on-primary-container": "#360061",
-                    "surface-variant": "#192540",
-                    "outline": "#6d758c",
-                    "on-tertiary-fixed-variant": "#526900",
-                    "error-container": "#a70138",
-                    "outline-variant": "#40485d",
-                    "on-error": "#490013",
-                    "on-tertiary": "#516700",
-                    "on-background": "#dee5ff",
-                    "tertiary-dim": "#beee00",
-                    "on-secondary-container": "#e8fbff",
-                    "surface": "#060e20",
-                    "primary-container": "#c284ff",
-                    "tertiary-fixed-dim": "#beee00",
-                    "tertiary": "#f3ffca",
-                    "secondary-dim": "#00d4ec",
-                    "tertiary-fixed": "#cafd00",
-                    "on-primary-fixed": "#000000",
-                    "inverse-primary": "#842cd3",
-                    "inverse-surface": "#faf8ff",
-                    "surface-container-highest": "#192540",
-                    "on-primary": "#47007c",
-                    "surface-bright": "#1f2b49",
-                    "on-surface-variant": "#a3aac4",
-                    "on-secondary-fixed": "#003a42",
-                    "on-surface": "#dee5ff",
-                    "on-tertiary-container": "#4a5e00",
-                    "primary": "#cc97ff",
-                    "surface-tint": "#cc97ff",
-                    "surface-dim": "#060e20",
-                    "on-secondary": "#004d57",
-                    "primary-fixed": "#c284ff",
-                    "on-tertiary-fixed": "#3a4a00",
-                    "background": "#060e20",
-                    "error": "#ff6e84",
-                    "surface-container-high": "#141f38",
-                    "secondary-container": "#006875",
-                    "on-primary-fixed-variant": "#430076",
-                    "surface-container-lowest": "#000000",
-                    "error-dim": "#d73357",
-                    "secondary-fixed": "#26e6ff",
-                    "on-secondary-fixed-variant": "#005964",
-                    "on-error-container": "#ffb2b9",
-                    "secondary": "#00e3fd",
-                    "surface-container": "#0f1930",
-                    "primary-fixed-dim": "#b971ff"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Space Grotesk"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .cinematic-shadow {
-            box-shadow: 0 40px 40px -10px rgba(255, 255, 255, 0.06);
-        }
-        .glass-panel {
-            background: rgba(25, 37, 64, 0.6);
-            backdrop-filter: blur(3000px);
-        }
-    </style>
-</head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
-<!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#060e20]/70 backdrop-blur-[20px] flex justify-between items-center px-6 md:px-12 py-6 w-full cinematic-shadow">
-<div class="text-2xl font-bold tracking-tighter text-purple-400 uppercase font-headline">
-            KINETIC_GALLERY
-        </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-purple-400 border-b-2 border-purple-400 pb-1 font-headline tracking-[-0.02em] font-bold hover:text-cyan-400 transition-all duration-300 ease-out" href="#">Work</a>
-<a class="text-slate-300 font-['Manrope'] font-medium hover:text-cyan-400 transition-all duration-300 ease-out" href="#">Process</a>
-<a class="text-slate-300 font-['Manrope'] font-medium hover:text-cyan-400 transition-all duration-300 ease-out" href="#">About</a>
-<a class="text-slate-300 font-['Manrope'] font-medium hover:text-cyan-400 transition-all duration-300 ease-out" href="#">Contact</a>
-</div>
-<button class="bg-primary text-on-primary-fixed px-6 py-2 rounded-full font-bold scale-95 active:scale-90 transition-transform hover:shadow-[0_0_20px_rgba(204,151,255,0.3)]">
-            רוצים לשמוע עוד?
-        </button>
-</nav>
-<main>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-end pt-32 pb-20 px-6 md:px-12 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Cinematic Abstract Art" class="w-full h-full object-cover opacity-60 scale-105" data-alt="Immersive abstract digital 3D sculpture with flowing violet and cyan liquid textures, dramatic studio lighting and dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYmBwojIsa7mb63mIvFJ7bG5I25kA2SNd3RcJndjqcgVrAYCl9dVCRNVmUHKnPvht9EMarJYDH7zN8bkngrbrw8FatGRrGzmcTfMB6eJK-8AFi5yWArHFvZxF5RVY5DAwPtksRyjl9Afkk0QqZ7EXmeJccAVETuoMV-rIGvEDcpt0ebUCVLWZ4-MXfeI4HNB7unTbdFFLLKB-DLqOPyjIkLb45ectOY1zkt1d5kEyZeul3d6HUrqKUM6hUln4mPi0IOncvB42GTbfI"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
-</div>
-<div class="relative z-10 w-full">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
-<div class="md:col-span-8">
-<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] tracking-[0.2em] uppercase font-bold rounded-md mb-6">
-                            Direction / Motion / Edit
-                        </span>
-<h1 class="text-6xl md:text-9xl font-headline font-bold tracking-[-0.04em] leading-[0.9] text-on-surface mb-8">
-                            yosef <br/> <span class="text-primary italic">anaki</span>
-</h1>
-</div>
-<div class="md:col-span-4 glass-panel p-8 rounded-xl border border-white/5 mb-4">
-<div class="space-y-4">
-<div>
-<p class="text-on-surface-variant text-xs uppercase tracking-widest font-bold mb-1">Client</p>
-<p class="text-lg font-headline font-medium">Aether Dynamics</p>
-</div>
-<div>
-<p class="text-on-surface-variant text-xs uppercase tracking-widest font-bold mb-1">Year</p>
-<p class="text-lg font-headline font-medium">2024</p>
-</div>
-<div>
-<p class="text-on-surface-variant text-xs uppercase tracking-widest font-bold mb-1">Duration</p>
-<p class="text-lg font-headline font-medium">02:45 Cinematic Cut</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Project Intro / The Challenge -->
-<section class="py-32 px-6 md:px-12 bg-surface">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
-<div class="md:col-span-4">
-<h2 class="text-tertiary text-sm tracking-[0.2em] uppercase font-bold sticky top-32">
-                        01. THE CHALLENGE
-                    </h2>
-</div>
-<div class="md:col-span-8">
-<p class="text-3xl md:text-4xl font-headline font-medium leading-tight mb-12">
-                        How do you visualize the speed of thought? Aether Dynamics needed a brand film that felt less like software and more like <span class="text-secondary">pure energy</span>.
-                    </p>
-<p class="text-on-surface-variant text-xl leading-relaxed font-light">
-                        The objective was to create a visual language that bridged the gap between quantum computing and organic human intuition. We were tasked with producing a high-fidelity cinematic experience that serves as the centerpiece for their global rebrand, requiring seamless integration of 3D motion graphics and live-action editorial.
-                    </p>
-</div>
-</div>
-</section>
-<!-- Solution Visual Breakdown -->
-<section class="py-12 bg-surface-container-low">
-<div class="max-w-screen-2xl mx-auto px-6">
-<div class="relative rounded-xl overflow-hidden group">
-<img alt="Technical Grid Background" class="w-full aspect-[21/9] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern workstation with multiple high-resolution monitors showing complex 3D node-based editing software in a dimly lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCetx3fEB2xAy7w0oCz4ocb6kVxNADTJ82bIi6jh-4H30fVAlSdeSbRplqkP3xLjJ0roEmFxBJYkaoIFiRF_Mq6b8GSW1xbw8VbbmuRJaMXSn0x0YPcBm3-TxUROKrOyf9oJQqYGfp1AFcRDerpC30fMwm-ghd3MMnQj_2XaIuXQIjr7Ck6kCy1VGJIHc__R-L8rxJE_igrceRnbyajeZJum8V0thAhAaO2N6kByKWoep1-fiYELiYCXOq6dDnvNnicmdVGLn9BYJrY"/>
-<div class="absolute inset-0 bg-primary-container/10 flex items-center justify-center">
-<button class="w-24 h-24 rounded-full bg-primary text-on-primary-fixed flex items-center justify-center cinematic-shadow hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</button>
-</div>
-<div class="absolute bottom-8 left-8 flex items-center gap-4">
-<div class="h-1 w-64 bg-white/20 rounded-full overflow-hidden">
-<div class="h-full bg-secondary w-1/3"></div>
-</div>
-<span class="text-[10px] font-bold tracking-widest text-white uppercase">אלון הגבר</span>
-</div>
-</div>
-</div>
-</section>
-<!-- The Solution Section -->
-<section class="py-32 px-6 md:px-12 bg-surface">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
-<div class="md:col-span-4 order-last md:order-first">
-<div class="p-8 bg-surface-container-high rounded-xl space-y-8">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary">bolt</span>
-<div>
-<h4 class="font-bold uppercase text-xs tracking-widest mb-2">Technical Mastery</h4>
-<p class="text-sm text-on-surface-variant">Real-time ray tracing combined with hand-painted textures.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary">movie_edit</span>
-<div>
-<h4 class="font-bold uppercase text-xs tracking-widest mb-2">Sonic Branding</h4>
-<p class="text-sm text-on-surface-variant">Custom spatial audio design to enhance the visual impact.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="md:col-span-8">
-<h2 class="text-tertiary text-sm tracking-[0.2em] uppercase font-bold mb-12">
-                        02. THE SOLUTION
-                    </h2>
-<p class="text-3xl md:text-4xl font-headline font-medium leading-tight mb-8">
-                        We developed a proprietary "Kinetic Particle" system that reacts dynamically to the edit's <span class="text-primary italic">rhythm</span>.
-                    </p>
-<p class="text-on-surface-variant text-xl leading-relaxed font-light mb-12">
-                        By utilizing a non-linear narrative structure, we allowed the visuals to flow between abstract data visualizations and concrete product applications. The color palette was restricted to deep navys and electric neons to maintain a premium, high-tech aesthetic that cuts through the noise.
-                    </p>
-</div>
-</div>
-</section>
-<!-- Asymmetric Asset Gallery -->
-<section class="py-20 px-6 md:px-12 bg-surface">
-<div class="max-w-7xl mx-auto">
-<h2 class="text-on-surface-variant text-sm tracking-[0.2em] uppercase font-bold mb-16">
-                    03. PROJECT ASSETS
-                </h2>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-<!-- Tall Column -->
-<div class="md:col-span-7 space-y-8 md:space-y-12">
-<div class="bg-surface-container-low rounded-xl overflow-hidden group">
-<img alt="Macro Tech Detail" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Extreme macro shot of high-end circuit board with glowing purple light paths and metallic surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZeRYq77d8hGNClO-rvnLMcRyecM0PZ2dzi8xuEZT8agueOmNsgaf3402zz7pw9C90A5goKs_iRXCIjoHn1sQRJfLwKpvNvgqekVYzwnXxodaJqlMv8cikTdoHZI03iM-US6HQJ3ZM3P8UC3TJ0wrGQNrGcRFZg9vDlBSd3AvF1ter7SeWJeLD0QRADxK2nhfzopVoMojIUygNaOaeJcOk92HFShyhUWr1Cs8LzuEL9VCKulaC1iLDOQU12VDneGSfNsNaHMldfIuK"/>
-</div>
-<div class="bg-surface-container-low rounded-xl overflow-hidden group">
-<img alt="Abstract Texture" class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract composition of floating glass shards reflecting neon cyan and magenta lights in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnPFY3guyCAnghkaupa8NZE6yl0osq3DXhFDDfz0qcH0Hqef4bITTxUlWRAJWhrkGoXjKdoQaqWSUpMZVtmiPSwxJUMeBBFk-U80ed_vi9-n8ZupmWV2uirwc0pSMt00iznQokSQOxcYe533UhvsbVLzK2ewNXYZhFWnFcKsw08YNzpjXRziw-jQNzfvoidtyoYCiVqS4Q95Be2sdrnPc36D1c4esQrYWcgzdq7WonKQubwxDQsSfllCh_AFSQ3GgRWsJ34hMUWD1U"/>
-</div>
-</div>
-<!-- Shifted Column -->
-<div class="md:col-span-5 space-y-8 md:space-y-12 md:mt-24">
-<div class="bg-surface-container-low rounded-xl overflow-hidden group">
-<img alt="Interface Design" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic user interface overlay on a dark background with data visualizations and glowing technical typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2grYnUaR3SR5FnCwH9ITK9ka6WA2941CqKXzVJCHIvr1KF2fbyRlJthNZkIrubnehIdMKBoy2PtCxBDgvHZDXgEoOwK07t-g2npMAvuMEjZ3-m4scXeKamPrdTwHMLeQLIUnNfF5SIVKNmtYyBa3-cTcmDYLkH9zU7-mw56fsvklJkApWgEaDkT6C1susOjEEuX9Z3S04GzZj3hJdJfSBKt7qHYr4zqW3AqCjGC4ru-j4dqmbizYINYY8VHup9qow0BYoaiifBt4-"/>
-</div>
-<div class="bg-surface-container-low rounded-xl overflow-hidden group">
-<img alt="Light Streak" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Long exposure photography of city lights at night forming ethereal glowing ribbons of blue and white light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGOnPYcsr3roYICICo5HONDE_7D_yeZZOD9vWy6zNVAGAelGigzfrNvrsmonAM0t9WUqTH9ij8dVksludUKI9TbeUlbrgCMVeKzXAQUkjXvwu3JSGW3HX_jv6-eyaQk4zMoKPagCKnv6CUT7erSRtIpwNwt9ivPQmX6X3JruU9u0YYxkgbcBH4w88-qahsi3Am3TglmtUKcWZtGaUGQqnw-9_aWU22tK3ErA4j9mwB--VJ4AzeViPS7XZTLwnnk5doFD3lruem6D73"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Next Project Preview -->
-<section class="py-40 px-6 md:px-12 bg-surface-container-low text-center overflow-hidden relative">
-<div class="absolute inset-0 z-0 opacity-20">
-<img alt="Next Background" class="w-full h-full object-cover" data-alt="Minimalist architectural space with harsh shadows and dramatic geometric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcyw6t089KF71DN60arQSaI9T-Zly8KQkZth7ha7x6abePJiQiwHyZujNT7T_snY925PaHNyZF1qg1hzQcNY54ae9_guOUzxR6_dK1G5uXNK54zldU17-pgITZ7-IElSOQ50-X8AZIzqKWcfesGwO1q4cMwUYBxljP3g7bW5qfPumFXCtdfBcn3cc3-VMS-uEj0V2QdoD6EpHTYkjy1dk4cuizd5dITTLgA9CB4S8sqDR-eAaQCcf_QOY3crKpNOV8nDUlr9ghNCM3"/>
-</div>
-<div class="relative z-10">
-<p class="text-on-surface-variant text-sm tracking-[0.3em] uppercase font-bold mb-8">NEXT PROJECT</p>
-<a class="group inline-block" href="#">
-<h2 class="text-5xl md:text-8xl font-headline font-bold mb-12 group-hover:text-primary transition-colors">CHRONOS <span class="italic">MK II</span></h2>
-<div class="flex items-center justify-center gap-4">
-<span class="w-12 h-[2px] bg-secondary group-hover:w-24 transition-all"></span>
-<span class="text-secondary uppercase tracking-widest font-bold">תראו מה עשיתי כבר</span>
-</div>
-</a>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#060e20] w-full py-20 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8 w-full border-t border-white/5">
-<div class="text-lg font-bold text-slate-100 font-headline uppercase">
-            Kinetic Gallery
-        </div>
-<p class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 order-last md:order-none">
-            © כל הזכויות שמורות. תוכנן ע"י בנאדם, נבנה בעזרת AI.
-        </p>
-<div class="flex gap-8">
-<a class="text-slate-500 font-['Manrope'] text-sm tracking-widest uppercase hover:text-cyan-400 hover:underline decoration-2 underline-offset-8 transition-all" href="#">Instagram</a>
-<a class="text-slate-500 font-['Manrope'] text-sm tracking-widest uppercase hover:text-cyan-400 hover:underline decoration-2 underline-offset-8 transition-all" href="#">Vimeo</a>
-<a class="text-slate-500 font-['Manrope'] text-sm tracking-widest uppercase hover:text-cyan-400 hover:underline decoration-2 underline-offset-8 transition-all" href="#">LinkedIn</a>
-</div>
-</footer>
-</body></html>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive portfolio website Rian - Bedimcode</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
